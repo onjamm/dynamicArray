@@ -9,7 +9,10 @@ public class DynamicStringList implements StringList{
     private void resizeAsNeeded(){
         if (size == words.length){
             String [] resizedArray = new String[words.length*2];
-
+            for (int i = 0; i < words.length; i++) {
+                resizedArray[i] = words[i];
+            }
+            words = resizedArray;
         }
     }
 
