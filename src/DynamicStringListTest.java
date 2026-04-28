@@ -11,8 +11,8 @@ public class DynamicStringListTest {
 
         //Act
         String actual = list.get(0);
-        
-        //Arrange
+
+        //Assert
         assertEquals("word", actual);
 
     }
