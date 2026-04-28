@@ -39,8 +39,19 @@ public class DynamicStringList implements StringList{
             
             words[i] = words[i+1];
         }
+        words[size-1] = null; //our garbage collector to rid "removed value"
         size--;
-         return removed;
+        return removed;
     }
+
+    public int size(){
+        return size;
+    }
+
+    public int capacity(){
+        return words.length;
+    }
+
+
      
 }
