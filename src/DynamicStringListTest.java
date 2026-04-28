@@ -1,4 +1,4 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -39,7 +39,7 @@ public class DynamicStringListTest {
     public void testAdd(){
         list.add("apple");
         String actual = list.get(0);
-        assertEquals("test", actual);
+        assertEquals("apple", actual);
     }
 
     @Test
@@ -66,6 +66,11 @@ public class DynamicStringListTest {
         int actual = list.size();
 
         assertEquals(4, actual);
+    }
+
+    @Test
+    public void testCapacity(){
+        assertEquals(10, list.capacity());
     }
 
 

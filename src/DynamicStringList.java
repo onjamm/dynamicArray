@@ -25,6 +25,7 @@ public class DynamicStringList implements StringList{
     }
 
     public void add(String value){
+        resizeAsNeeded();
         words[size++] = value;
     }
 
