@@ -35,5 +35,12 @@ public class DynamicStringListTest {
         assertEquals("love", list.get(1));
     }
 
+    @Test
+    public void testAdd(){
+        list.add("apple");
+        String actual = list.get(0)
+        assertEquals("test", actual);
+    }
+
 
 }
