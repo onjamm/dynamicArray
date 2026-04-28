@@ -19,5 +19,9 @@ public class DynamicStringList implements StringList{
     public String get(int index) {
     return words[index];
     }
+
+    public void set(int index, String value) {
+        words[index] = value;
+    }
      
 }
