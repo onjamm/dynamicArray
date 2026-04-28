@@ -73,5 +73,27 @@ public class DynamicStringListTest {
         assertEquals(10, list.capacity());
     }
 
+    @Test
+    public void testResizeAsNeeded(){
+        list.add("naruto");
+        list.add("sauske");
+        list.add("choji");
+        list.add("sakura");
+        list.add("ino");
+        list.add("hinata");
+        list.add("rock");
+        list.add("guy");
+        list.add("jiriya");
+        list.add("shikumaru");
+        list.add("tsunade");
+        list.add("kakashi");
+        list.add("old man");
+
+        int actual = list.size();
+
+        assertEquals(13, actual);
+        
+    }
+
 
 }
