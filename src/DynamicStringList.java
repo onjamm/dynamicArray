@@ -16,15 +16,8 @@ public class DynamicStringList implements StringList{
         }
     }
 
-
-
-
-
-
     public String get(int index) {
-        
-
-
-        return words[index];
+    return words[index];
     }
+     
 }
