@@ -12,7 +12,7 @@ public class DynamicStringListTest {
     }
     
     @Test
-    void testGet(){
+    public void testGet(){
         //Arrange
         list.add("word");
 
@@ -54,6 +54,18 @@ public class DynamicStringListTest {
         assertEquals(4,list.size());
 
 
+    }
+
+    @Test
+    public void testSize(){
+        list.add("drew");
+        list.add("think");
+        list.add("java");
+        list.add("rocks");
+
+        int actual = list.size();
+
+        assertEquals(4, actual);
     }
 
 
