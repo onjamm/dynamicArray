@@ -23,5 +23,9 @@ public class DynamicStringList implements StringList{
     public void set(int index, String value) {
         words[index] = value;
     }
+
+    public void add(String value){
+        words[size++] = value;
+    }
      
 }
