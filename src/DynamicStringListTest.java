@@ -38,8 +38,22 @@ public class DynamicStringListTest {
     @Test
     public void testAdd(){
         list.add("apple");
-        String actual = list.get(0)
+        String actual = list.get(0);
         assertEquals("test", actual);
+    }
+
+    @Test
+    public void testRemove(){
+        list.add("milo");
+        list.add("screams");
+        list.add("at");
+        list.add("the");
+        list.add("birds");
+        String removed = list.remove(3);
+        assertEquals("the", removed);
+        assertEquals(4,list.size());
+
+
     }
 
 
