@@ -27,5 +27,20 @@ public class DynamicStringList implements StringList{
     public void add(String value){
         words[size++] = value;
     }
+
+    public String remove(int index) {
+        
+        if(index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        String removed = words[index];
+        for (int i = index; i < size - 1; i++) {
+            
+            words[i] = words[i+1];
+        }
+        size--;
+         return removed;
+    }
      
 }
